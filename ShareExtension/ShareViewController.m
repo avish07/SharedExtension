@@ -76,8 +76,8 @@ static NSString *const appGroupId = @"group.Guesthouser";
                 else
                     arrSites = [[NSMutableArray alloc] init];
                 
-                NSDictionary *dict = @{@"Text": self.contentText , @"URL": (NSURL *)item};
-                [arrSites addObject:[dict mutableCopy]];
+                NSDictionary *dict = @{@"Text": self.contentText , @"URL": [(NSURL *)item absoluteString] };
+                [arrSites addObject: dict];
                
                 [userDefaults setObject:arrSites forKey:@"SharedExtension"];
                 [userDefaults synchronize];

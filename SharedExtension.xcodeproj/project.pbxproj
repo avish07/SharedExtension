@@ -85,7 +85,6 @@
 		E646AB031EE0234800E464A0 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
 		E694E2B61EE13535003059FB /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
 		E694E2B71EE13535003059FB /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
-		E694E2BD1EE17B40003059FB /* S.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = S.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,13 +116,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E694E2BA1EE17B40003059FB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -145,7 +137,6 @@
 				E646AAD11EE01E3500E464A0 /* SharedExtensionTests.xctest */,
 				E646AADC1EE01E3500E464A0 /* SharedExtensionUITests.xctest */,
 				E646AAF21EE0220600E464A0 /* ShareExtension.appex */,
-				E694E2BD1EE17B40003059FB /* S.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -282,23 +273,6 @@
 			productReference = E646AAF21EE0220600E464A0 /* ShareExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		E694E2BC1EE17B40003059FB /* S */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E694E2C61EE17B41003059FB /* Build configuration list for PBXNativeTarget "S" */;
-			buildPhases = (
-				E694E2B91EE17B40003059FB /* Sources */,
-				E694E2BA1EE17B40003059FB /* Frameworks */,
-				E694E2BB1EE17B40003059FB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = S;
-			productName = S;
-			productReference = E694E2BD1EE17B40003059FB /* S.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -338,11 +312,6 @@
 							};
 						};
 					};
-					E694E2BC1EE17B40003059FB = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = R26BPY33GG;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = E646AAB31EE01E3500E464A0 /* Build configuration list for PBXProject "SharedExtension" */;
@@ -362,7 +331,6 @@
 				E646AAD01EE01E3500E464A0 /* SharedExtensionTests */,
 				E646AADB1EE01E3500E464A0 /* SharedExtensionUITests */,
 				E646AAF11EE0220600E464A0 /* ShareExtension */,
-				E694E2BC1EE17B40003059FB /* S */,
 			);
 		};
 /* End PBXProject section */
@@ -397,13 +365,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E646AAF91EE0220600E464A0 /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E694E2BB1EE17B40003059FB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,13 +403,6 @@
 			files = (
 				E694E2B81EE13535003059FB /* ConfigViewController.m in Sources */,
 				E646AAF61EE0220600E464A0 /* ShareViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E694E2B91EE17B40003059FB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -583,7 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -597,7 +551,7 @@
 				CODE_SIGN_ENTITLEMENTS = SE/SE.entitlements;
 				DEVELOPMENT_TEAM = R26BPY33GG;
 				INFOPLIST_FILE = SE/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slack.com.SE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -611,7 +565,7 @@
 				CODE_SIGN_ENTITLEMENTS = SE/SE.entitlements;
 				DEVELOPMENT_TEAM = R26BPY33GG;
 				INFOPLIST_FILE = SE/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slack.com.SE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -670,7 +624,7 @@
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
 				DEVELOPMENT_TEAM = R26BPY33GG;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slack.com.SE.ShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -684,35 +638,9 @@
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
 				DEVELOPMENT_TEAM = R26BPY33GG;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slack.com.SE.ShareExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		E694E2C71EE17B41003059FB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = R26BPY33GG;
-				INFOPLIST_FILE = S/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.slack.com.SE.S;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		E694E2C81EE17B41003059FB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = R26BPY33GG;
-				INFOPLIST_FILE = S/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.slack.com.SE.S;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -762,15 +690,6 @@
 			buildConfigurations = (
 				E646AAFF1EE0220600E464A0 /* Debug */,
 				E646AB001EE0220600E464A0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E694E2C61EE17B41003059FB /* Build configuration list for PBXNativeTarget "S" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E694E2C71EE17B41003059FB /* Debug */,
-				E694E2C81EE17B41003059FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
